@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    
+}
+.container{
+    background-color: #0D0B17;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    
+}
+
+p{
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    line-height : 1.7em;
+}
+
+ul{
+    list-style-type:disc
+}
+li{
+    color: #FFA1FF; 
+    padding-left: 0.2em;
+    padding-bottom: 1.5em;
+    
+}
+li p{
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 1.2em;
+}
+
+h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFA1FF;    ;
+    font-weight: 600;
+    font-size: 1.7em;
+    letter-spacing: 0.2em;
+
+}
+span{
+    color:#FFA1FF ;
+}
+.banner{
+    padding-right:10%;
+    padding-left:10%;
+    width: 80%;
+    grid-column: 2/4;
+    grid-row: 1/2; 
+    margin-bottom:-1%;
+    
+}
+.subtitle{
+    background-image: url(../img/tablero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/4; 
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+    
+}
+.subtitle h3{
+    font-size:1.3em ;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    padding-bottom: 30%;
+}
+
+
+
+.textohistoria{
+    color: white;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-family: 'Cabin', sans-serif;
+    background-image: url(../img/agujeronegro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 5%;
+
+}
+
+
+.textohistoria p{
+    font-size: 1.2em;
+    padding-right: 45%;
+}
+
+
+.titulonaves{
+    grid-row: 4/5;
+    grid-column: 2/4; 
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(13,11,23,1) 0%, rgba(13,11,23,1) 9%, rgba(20,15,30,1) 28%, rgba(20,15,30,1) 74%, rgba(13,11,23,1) 93%, rgba(13,11,23,1) 100%);
+}
+
+
+.naves{
+    background: linear-gradient(to right, rgba(13,11,23,1) 0%, rgba(13,11,23,1) 9%, rgba(20,15,30,1) 28%, rgba(20,15,30,1) 74%, rgba(13,11,23,1) 93%, rgba(13,11,23,1) 100%);    grid-row: 5/6;
+    grid-column: 2/4; 
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+}
+
+.comojugar{
+    grid-row: 6/7;
+    grid-column: 2/4; 
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.comojugar p{
+    font-size: 1.5em;
+}
+.comojugar h2{
+    padding-top: 3em;
+    padding-bottom: 3%;
+}
+
+
+.tablero{
+    grid-row: 7/8   ;
+    grid-column: 2/3; 
+    width: 90%;
+    padding-top: 10%;
+    padding-right: 9%;
+    padding-bottom: 55%;
+    margin-bottom: 15%;
+    background: linear-gradient(to right, rgba(13,11,23,1) 0%, rgba(20,15,30,1) 78%, rgba(20,15,30,1) 99%, rgba(20,15,30,1) 100%);
+    border-right: 4px solid #FFA1FF;
+}
+
+.comienzo{
+    grid-row: 7/8   ;
+    grid-column: 3/4; 
+    padding-left: 5%;
+    margin-bottom: 15%;
+    text-align: left;
+}
+
+.comienzo h2{
+    padding-bottom: 3%;
+}
+
+.comienzo ul{
+    padding-left: 3%;
+}
+.movimiento{
+    padding-top: 5%;
+    width: 90%;
+}
+
+.bases{
+    grid-row: 8/9   ;
+    grid-column: 2/3;
+    padding-right: 5%; 
+    padding-bottom: 3%;
+    margin-bottom: 15%;
+    border-right: 4px solid #FFA1FF;
+
+    
+}
+.bases ul{
+    padding-left: 4%;
+}
+.bases h2{
+    padding-bottom: 5%;
+    
+}
+.bases ul li ul {
+    list-style: none;
+    padding-left:0 ;
+    padding-top: 3%;
+}
+ .bases ul li ul li {
+     padding-bottom: 0.1em;
+ }
+
+.screenshotstab{
+    grid-row: 8/9   ;
+    grid-column: 3/4;
+    width: 90%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    margin-bottom: 15%;
+}
+
+.cartaataque{
+    padding-top: 12%;
+    grid-row: 9/10;
+    grid-column: 2/3;
+    width: 90%;
+    padding-right: 9.5%;
+    padding-bottom: 30%;
+    background: linear-gradient(to right, rgba(13,11,23,1) 0%, rgba(20,15,30,1) 78%, rgba(20,15,30,1) 99%, rgba(20,15,30,1) 100%);
+    border-right: 4px solid #FFA1FF;
+    margin-bottom: 15%;
+
+}
+
+.ataque{
+    grid-row:9/10   ;
+    grid-column: 3/4;
+    padding-right: 3em; 
+    padding-left: 5%;
+    margin-bottom: 15%;
+}
+
+.ataque h2{
+    padding-bottom: 5%;
+}
+.ataque ul{
+    padding-left: 3%;
+}
+.contillustr{
+    grid-row:10/11;
+    grid-column: 2/4;
+    display: inline-flex;
+    justify-content: space-between;  
+    flex-wrap: wrap;
+}
+.contillustr p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.fotoillu{
+    width: 33%; 
+}
+.fotoillustra{
+    width: 100%;
+}
+
+.sabermas{
+    grid-row:11/12;
+    grid-column: 2/4;
+    width: 33%;
+    display:flex;
+    margin-left: 33%;
+    border-top: 4px solid #FFA1FF;
+    
+}
+.docu{
+    height: 30%;
+    padding-top: 1em;
+}
+.sabermas p{
+    margin-top: 0.5em;
+}
+
+.habilidades{
+    grid-row:12/13;
+    grid-column: 2/3;
+    padding-right:9%;
+    margin-bottom: 15%;
+}
+
+.habilidades h2{
+    padding-bottom: 5%;
+
+}
+.habilidades ul{
+    padding-left: 3%;
+}
+
+
+.cartahabilidad{
+    grid-row:12/13;
+    grid-column: 3/4;
+    width: 100%;
+    background: linear-gradient(to left, rgba(13,11,23,1) 0%, rgba(20,15,30,1) 78%, rgba(20,15,30,1) 99%, rgba(20,15,30,1) 100%);
+    border-left: 4px solid #FFA1FF;;
+    padding-left: 10%;
+    padding-bottom: 70%;
+    padding-top: 12%;
+    margin-bottom: 15%;
+}
+
+footer{
+    background-color: #140f1e;
+    height: 10em;
+    text-align: center;
+}
+.bannerfoot{
+    width: 20%;
+    padding-top: 2em;
+}
+
+@media (max-width: 600px) {
+   
+    .container{
+        background-color: #0D0B17;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto auto auto auto auto auto;
+    
+    }
+
+    .banner{
+
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    
+    }
+
+    .subtitle{
+        text-align: center;
+        grid-row: 2/3;
+        grid-column: 2/4;
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+    }
+    h2 {
+        font-size: .3em;
+    }
+    
+}
